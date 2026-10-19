@@ -1,62 +1,538 @@
-{
-  "emp001": {
-    "name": "Jeffrey Ansah",
-    "position": "Systems Administrator",
-    "email": "jeffrey.ansah@example.com",
-    "phone": "+233240000001"
+[
+  {
+    "employeeId": "ADM98174",
+    "fullName": "SETH OWUSU MORGAN",
+    "firstName": "Seth",
+    "surname": "OWUSU MORGAN",
+    "jobTitle": "Chief Accountant",
+    "department": "ADM - R",
+    "employmentType": "Contract",
+    "phone": "0208127365",
+    "email": "smorgan@reissco.com.gh"
   },
-  "emp002": {
-    "name": "Chris Doe",
-    "position": "HR Manager",
-    "email": "jane.doe@example.com",
-    "phone": "+233240000002"
+  {
+    "employeeId": "ADM25021",
+    "fullName": "ANGELA MAWUSI NYANYO",
+    "firstName": "Angela",
+    "surname": "NYANYO",
+    "jobTitle": "Finance Officer",
+    "department": "RIT - R",
+    "employmentType": "Permanent",
+    "phone": "0548422251",
+    "email": "anyanyo@reissco.com.gh"
   },
-  "emp003": {
-    "name": "Raymond Smith",
-    "position": "Sales Executive",
-    "email": "john.smith@example.com",
-    "phone": "+233240000003"
+  {
+    "employeeId": "RMS220501",
+    "fullName": "ALEX NINSON",
+    "firstName": "Alex",
+    "surname": "NINSON",
+    "jobTitle": "Driver",
+    "department": "Mechanical",
+    "employmentType": "Permanent",
+    "phone": "0202682871",
+    "email": "aninson@reissco.com.gh"
   },
-  "emp004": {
-    "name": "Wendy Mensah",
-    "position": "Software Developer",
-    "email": "kwame.mensah@example.com",
-    "phone": "+233240000004"
+  {
+    "employeeId": "ADM12001",
+    "fullName": "ANGELA NAANA KWOFIE",
+    "firstName": "Angela",
+    "surname": "KWOFIE",
+    "jobTitle": "Accounts Officer",
+    "department": "ADM - R",
+    "employmentType": "Permanent",
+    "phone": "0244262840",
+    "email": "akwofie@reissco.com.gh"
   },
-  "emp005": {
-    "name": "Ama Owusu",
-    "position": "Marketing Officer",
-    "email": "ama.owusu@example.com",
-    "phone": "+233240000005"
+  {
+    "employeeId": "ADM18002",
+    "fullName": "KWADWO ANTWI OBENG",
+    "firstName": "Kwadwo",
+    "surname": "OBENG",
+    "jobTitle": "Accounts Officer",
+    "department": "ADM - R",
+    "employmentType": "Permanent",
+    "phone": "0248359605",
+    "email": "kobeng@reissco.com.gh"
   },
-  "emp006": {
-    "name": "Kofi Asante",
-    "position": "Database Administrator",
-    "email": "kofi.asante@example.com",
-    "phone": "+233240000006"
+  {
+    "employeeId": "ADM21022",
+    "fullName": "JEFFREY SOWA",
+    "firstName": "Jeffrey",
+    "surname": "SOWA",
+    "jobTitle": "Managing Director",
+    "department": "ADM - R",
+    "employmentType": "Permanent",
+    "phone": "0267709999",
+    "email": "jsowa@reissco.com.gh"
   },
-  "emp007": {
-    "name": "Akosua Boateng",
-    "position": "Accountant",
-    "email": "akosua.boateng@example.com",
-    "phone": "+233240000007"
+  {
+    "employeeId": "AGR03200",
+    "fullName": "RAYMOND SELORM MAMATTAH",
+    "firstName": "Raymond",
+    "surname": "MAMATTAH",
+    "jobTitle": "Head, Admin and HR",
+    "department": "AGR - R",
+    "employmentType": "Permanent",
+    "phone": "0244124625",
+    "email": "rmamattah@reissco.com.gh"
   },
-  "emp008": {
-    "name": "Yaw Ofori",
-    "position": "Network Engineer",
-    "email": "yaw.ofori@example.com",
-    "phone": "+233240000008"
+  {
+    "employeeId": "AGR01192",
+    "fullName": "GEORGE BROWN-TETTEH",
+    "firstName": "George",
+    "surname": "BROWN-TETTEH",
+    "jobTitle": "General Manager-Agric",
+    "department": "AGR - R",
+    "employmentType": "Permanent",
+    "phone": "0244518828",
+    "email": "gbrown@reissco.com.gh"
   },
-  "emp009": {
-    "name": "Abena Addo",
-    "position": "Customer Service Officer",
-    "email": "abena.addo@example.com",
-    "phone": "+233240000009"
+  {
+    "employeeId": "AGR25021",
+    "fullName": "FRANCIS AMOKWAW",
+    "firstName": "Francis",
+    "surname": "AMOKWAW",
+    "jobTitle": "Agronomist",
+    "department": "AGR - R",
+    "employmentType": "Permanent",
+    "phone": "0509805621",
+    "email": "famokwaw@reissco.com.gh"
   },
-  "emp010": {
-    "name": "Kojo Appiah",
-    "position": "Project Manager",
-    "email": "kojo.appiah@example.com",
-    "phone": "+233240000010"
+  {
+    "employeeId": "AGR23001",
+    "fullName": "DANIEL KWADWO TANO",
+    "firstName": "Daniel",
+    "surname": "TANO",
+    "jobTitle": "Agronomist",
+    "department": "AGR - R",
+    "employmentType": "Permanent",
+    "phone": "059805615",
+    "email": "dtano@reissco.com.gh"
+  },
+  {
+    "employeeId": "DRA17001",
+    "fullName": "WILSON KWABENA DZAH",
+    "firstName": "Wilson",
+    "surname": "DZAH",
+    "jobTitle": "General Manager - IHS",
+    "department": "IHS Drager - R",
+    "employmentType": "Permanent",
+    "phone": "0206706072",
+    "email": "wdzah@reissco.com.gh"
+  },
+  {
+    "employeeId": "RIS00801",
+    "fullName": "CHRISTIAN LAWER TANIHU",
+    "firstName": "Christian",
+    "surname": "TANIHU",
+    "jobTitle": "General Manager - Reiss IT",
+    "department": "RIT - R",
+    "employmentType": "Permanent",
+    "phone": "0244653030",
+    "email": "ctanihu@reissco.com.gh"
+  },
+  {
+    "employeeId": "RIS25021",
+    "fullName": "WENDY AKUFFO-PARRY",
+    "firstName": "Wendy",
+    "surname": "AKUFFO-PARRY",
+    "jobTitle": "Operations/Executive Assistant",
+    "department": "RIT - R",
+    "employmentType": "Permanent",
+    "phone": "0543571337",
+    "email": "wakuffo-parry@reissco.com.gh"
+  },
+  {
+    "employeeId": "HR-EMP-00018",
+    "fullName": "MOSES ETORNAM MENSAH",
+    "firstName": "Moses",
+    "surname": "MENSAH",
+    "jobTitle": "IT Officer",
+    "department": "RIT - R",
+    "employmentType": "Contract",
+    "phone": "0591465157",
+    "email": "mmensah@reissco.com.gh"
+  },
+  {
+    "employeeId": "HR-EMP-00019",
+    "fullName": "RODNEY ACKUMANY",
+    "firstName": "Rodney",
+    "surname": "ACKUMANY",
+    "jobTitle": "IT Officer",
+    "department": "RIT - R",
+    "employmentType": "Contract",
+    "phone": "0244754204",
+    "email": "rackumany@reissco.com.gh"
+  },
+  {
+    "employeeId": "RIS95153",
+    "fullName": "BEN OSCAR YEBOAH",
+    "firstName": "Ben",
+    "surname": "YEBOAH",
+    "jobTitle": "Field Engineer",
+    "department": "RIT - R",
+    "employmentType": "Contract",
+    "phone": "0209985215",
+    "email": "byeboah@reissco.com.gh"
+  },
+  {
+    "employeeId": "RIS07002",
+    "fullName": "CLEMENT OSAE ODURO",
+    "firstName": "Clement",
+    "surname": "ODURO",
+    "jobTitle": "Field Engineer",
+    "department": "RIT - R",
+    "employmentType": "Permanent",
+    "phone": "0265725200",
+    "email": "coduro@reissco.com.gh"
+  },
+  {
+    "employeeId": "RIS98173",
+    "fullName": "ROBERT AMEWUDZO",
+    "firstName": "Robert",
+    "surname": "AMEWUDZO",
+    "jobTitle": "Field Engineer",
+    "department": "RIT - R",
+    "employmentType": "Permanent",
+    "phone": "0277401630",
+    "email": "ramewudzo@reissco.com.gh"
+  },
+  {
+    "employeeId": "RIS98176",
+    "fullName": "ROBERT MAJDOUB",
+    "firstName": "Robert",
+    "surname": "MAJDOUB",
+    "jobTitle": "Field Engineer",
+    "department": "RIT - R",
+    "employmentType": "Permanent",
+    "phone": "0244766732",
+    "email": "rmajdoub@reissco.com.gh"
+  },
+  {
+    "employeeId": "PHA93087",
+    "fullName": "FREDERICK A FREMPONG",
+    "firstName": "Frederick",
+    "surname": "ABOAGYE",
+    "jobTitle": "Regulatory Affairs Executive",
+    "department": "VET - R",
+    "employmentType": "Permanent",
+    "phone": "0208114861",
+    "email": "ffrempong@reissco.com.gh"
+  },
+  {
+    "employeeId": "VET94132",
+    "fullName": "PAULA SUWIIR",
+    "firstName": "Paula",
+    "surname": "SUWIIR",
+    "jobTitle": "Secretary",
+    "department": "VET - R",
+    "employmentType": "Permanent",
+    "phone": "0244873416",
+    "email": "pnakaar@reissco.com.gh"
+  },
+  {
+    "employeeId": "VET19101",
+    "fullName": "FREDERICK ADARKWAH",
+    "firstName": "Frederick",
+    "surname": "ADARKWAH",
+    "jobTitle": "General Manager - Vet",
+    "department": "VET - R",
+    "employmentType": "Permanent",
+    "phone": "0542811602",
+    "email": "fadarkwah@reissco.com.gh"
+  },
+  {
+    "employeeId": "VET-96159",
+    "fullName": "VICTOR A. KETEKU",
+    "firstName": "Victor",
+    "surname": "ASIEDU",
+    "jobTitle": "Technical Support Officer",
+    "department": "VET - R",
+    "employmentType": "Contract",
+    "phone": "0243737743",
+    "email": "vketeku@reissco.com.gh"
+  },
+  {
+    "employeeId": "VET21001",
+    "fullName": "DIRAC G. FREMPONG",
+    "firstName": "Dirac",
+    "surname": "FREMPONG",
+    "jobTitle": "Veterinary Manager",
+    "department": "VET - R",
+    "employmentType": "Permanent",
+    "phone": "0247697050",
+    "email": "dfrempong@reissco.com.gh"
+  },
+  {
+    "employeeId": "VET24001",
+    "fullName": "MOHAMMED HAFIZ IBRAHIM",
+    "firstName": "Ibrahim",
+    "surname": "HAFIZ",
+    "jobTitle": "Veterinary Sales Officer",
+    "department": "VET - R",
+    "employmentType": "Permanent",
+    "phone": "0542380833",
+    "email": "mibrahim@reissco.com.gh"
+  },
+  {
+    "employeeId": "VET24002",
+    "fullName": "KWASI AKURAN JNR SASU",
+    "firstName": "Junior",
+    "surname": "SASU",
+    "jobTitle": "Veterinary Manager",
+    "department": "VET - R",
+    "employmentType": "Permanent",
+    "phone": "0249059199",
+    "email": "kakurang@reissco.com.gh"
+  },
+  {
+    "employeeId": "HR-EMP-00003",
+    "fullName": "BRIGHT FRIMPONG",
+    "firstName": "Bright",
+    "surname": "FRIMPONG",
+    "jobTitle": "Field Engineer",
+    "department": "RIT - R",
+    "employmentType": "Permanent",
+    "phone": "0244926233",
+    "email": "bfrimpong@reissco.com.gh"
+  },
+  {
+    "employeeId": "HR-EMP-00009",
+    "fullName": "JAMES BOATENG",
+    "firstName": "James",
+    "surname": "BOATENG",
+    "jobTitle": "Field Engineer",
+    "department": "RIT - R",
+    "employmentType": "Contract",
+    "phone": "0244704781",
+    "email": "jboateng@reissco.com.gh"
+  },
+  {
+    "employeeId": "HR-EMP-00010",
+    "fullName": "GLADYS DZEBU",
+    "firstName": "Gladys",
+    "surname": "DZEBU",
+    "jobTitle": "Office Assistant",
+    "department": "ADM - R",
+    "employmentType": "Contract",
+    "phone": "0246977961",
+    "email": "gdzebu@reissco.com.gh"
+  },
+  {
+    "employeeId": "HR-EMP-00011",
+    "fullName": "BENJAMIN AKOWUAH AMANKWAH",
+    "firstName": "Benjamin",
+    "surname": "AMANKWAH",
+    "jobTitle": "Sales Engineer",
+    "department": "IHS Drager - R",
+    "employmentType": "Permanent",
+    "phone": "0557704097",
+    "email": "bamankwah@reissco.com.gh"
+  },
+  {
+    "employeeId": "HR-EMP-00012",
+    "fullName": "GEORGE ADDAE ACHEAMPONG",
+    "firstName": "George",
+    "surname": "ACHEAMPONG",
+    "jobTitle": "Veterinary Manager",
+    "department": "VET - R",
+    "employmentType": "Contract",
+    "email": "gacheampong@reissco.com.gh"
+  },
+  {
+    "employeeId": "HR-EMP-00013",
+    "fullName": "ASANTE APPAH",
+    "firstName": "Asante",
+    "surname": "APPAH",
+    "jobTitle": "Logistics Manager",
+    "department": "VET - R",
+    "employmentType": "Contract",
+    "phone": "0208169686",
+    "email": "aasante@reissco.com.gh"
+  },
+  {
+    "employeeId": "HR-EMP-00014",
+    "fullName": "MOHAMMED MAHAMADU",
+    "firstName": "Mohammed",
+    "surname": "MAHAMADU",
+    "jobTitle": "Office Assistant",
+    "department": "ADM - R",
+    "employmentType": "Contract",
+    "phone": "0554529994",
+    "email": "mmahamadu@reissco.com.gh"
+  },
+  {
+    "employeeId": "HR-EMP-00015",
+    "fullName": "ELIJAH JUNIOR ANGAAMCHAB",
+    "firstName": "Elijah",
+    "surname": "ANGAAMCHAB",
+    "jobTitle": "Agronomist",
+    "department": "AGR - R",
+    "employmentType": "Contract",
+    "phone": "0241653503",
+    "email": "eangaamchab@reissco.com.gh"
+  },
+  {
+    "employeeId": "HR-EMP-00017",
+    "fullName": "ABRAHAM ANUM",
+    "firstName": "Abraham",
+    "surname": "ANUM",
+    "jobTitle": "Executive Chauffeur",
+    "department": "ADM - R",
+    "employmentType": "Contract",
+    "phone": "0550231666",
+    "email": "aanum@reissco.com.gh"
+  },
+  {
+    "employeeId": "ADM25111",
+    "fullName": "SAM ACQUAH",
+    "firstName": "Sam",
+    "surname": "ACQUAH",
+    "jobTitle": "Finance Manager",
+    "department": "ADM - R",
+    "employmentType": "Permanent",
+    "phone": "0243125224",
+    "email": "sacquah@reissco.com.gh"
+  },
+  {
+    "employeeId": "PHA15001",
+    "fullName": "CHARLES AMANKWAH",
+    "firstName": "Charles",
+    "surname": "AMANKWAH",
+    "jobTitle": "Admin Manager",
+    "department": "Pharmacy",
+    "employmentType": "Permanent",
+    "phone": "0209415021",
+    "email": "mechanical@reissco.com.gh"
+  },
+  {
+    "employeeId": "MEC98171",
+    "fullName": "AGBEKO DAKU",
+    "firstName": "Agbeko",
+    "surname": "DAKU",
+    "jobTitle": "Mechanical Officer",
+    "department": "Mechanical",
+    "employmentType": "Permanent",
+    "phone": "0244634985",
+    "email": "adaku@reissco.com.gh"
+  },
+  {
+    "employeeId": "HR-EMP-00021",
+    "fullName": "Derrick Ofori Agu",
+    "firstName": "Derrick",
+    "surname": "Ofori",
+    "jobTitle": "IT Officer",
+    "department": "RIT - R",
+    "employmentType": "Contract",
+    "phone": "0591586934"
+  },
+  {
+    "employeeId": "HR-EMP-00022",
+    "fullName": "Saviour Narh Doku",
+    "firstName": "Saviour",
+    "surname": "Doku",
+    "jobTitle": "IT Officer",
+    "department": "RIT - R",
+    "employmentType": "Contract",
+    "phone": "0546406319"
+  },
+  {
+    "employeeId": "HR-EMP-00023",
+    "fullName": "Meshack Commey",
+    "firstName": "Meshack",
+    "surname": "Commey",
+    "jobTitle": "IT Officer",
+    "department": "RIT - R",
+    "employmentType": "Contract",
+    "phone": "0592761798"
+  },
+  {
+    "employeeId": "HR-EMP-00024",
+    "fullName": "Papa Nkunim Afriyie Agyeman-Serebuoh",
+    "firstName": "Papa Nkunim Afriyie",
+    "surname": "Agyeman-Serebuoh",
+    "jobTitle": "IT Officer",
+    "department": "RIT - R",
+    "employmentType": "Contract",
+    "phone": "0597646859"
+  },
+  {
+    "employeeId": "HR-EMP-00025",
+    "fullName": "Benjamin Boatey Okota",
+    "firstName": "Benjamin",
+    "surname": "Boatey Okota",
+    "jobTitle": "IT Officer",
+    "department": "RIT - R",
+    "employmentType": "Contract",
+    "phone": "0554399676"
+  },
+  {
+    "employeeId": "HR-EMP-00026",
+    "fullName": "Brain Bortey Borquaye",
+    "firstName": "Brain",
+    "surname": "Borquaye",
+    "jobTitle": "Digital Archiving Officer",
+    "department": "RIT - R",
+    "employmentType": "Contract",
+    "phone": "0548683401"
+  },
+  {
+    "employeeId": "HR-EMP-00027",
+    "fullName": "Ebenezer Wilson",
+    "firstName": "Ebenezer",
+    "surname": "Wilson",
+    "jobTitle": "Digital Archiving Officer",
+    "department": "RIT - R",
+    "employmentType": "Contract",
+    "phone": "0557275582"
+  },
+  {
+    "employeeId": "HR-EMP-00028",
+    "fullName": "Eric Kojo Viku",
+    "firstName": "Eric",
+    "surname": "Viku",
+    "jobTitle": "Digital Archiving Officer",
+    "department": "RIT - R",
+    "employmentType": "Contract",
+    "phone": "0534423925"
+  },
+  {
+    "fullName": "Prince Kofi Andah",
+    "firstName": "Prince",
+    "surname": "Andah",
+    "jobTitle": "Digital Archiving Officer",
+    "department": "RIT - R",
+    "employmentType": "Contract",
+    "phone": "0240548460"
+  },
+  {
+    "employeeId": "HR-EMP-00029",
+    "fullName": "Joshua Yaw Dennison",
+    "firstName": "Joshua",
+    "surname": "Dennison",
+    "jobTitle": "Digital Archiving Officer",
+    "department": "RIT - R",
+    "employmentType": "Contract",
+    "phone": "0551999800"
+  },
+  {
+    "fullName": "Derrick Agyei Asare",
+    "firstName": "Derrick",
+    "surname": "Asare",
+    "jobTitle": "Digital Archiving Officer",
+    "department": "RIT - R",
+    "employmentType": "Contract",
+    "phone": "0557344517"
+  },
+  {
+    "employeeId": "HR-EMP-00020",
+    "fullName": "Bampoh Jeffrey",
+    "firstName": "Jeffrey",
+    "surname": "Bampoh",
+    "jobTitle": "System Admin/Network Administrator",
+    "department": "RIT - R",
+    "employmentType": "Contract",
+    "phone": "0502792754",
+    "email": "jbampoh@reissco.com.gh"
   }
-}
+]
