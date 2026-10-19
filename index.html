@@ -60,7 +60,12 @@
     if (text != null) e.textContent = text;
     return e;
   }
-  function norm(s) { return String(s == null ? '' : s).trim().toLowerCase(); }
+
+  // stricter normalizer for ids/keys: trim, lowercase, remove hidden/non-alnum except hyphen
+  function normId(s) {
+    return String(s == null ? '' : s).trim().toLowerCase().replace(/[^a-z0-9\-]/g, '');
+  }
+
   function titleCase(s) {
     return String(s || '').toLowerCase().replace(/(^|[\s\-.'])([a-z])/g, function (m, a, b) { return a + b.toUpperCase(); });
   }
@@ -86,14 +91,27 @@
   }
 
   function findRecord(data, id) {
-    var key = norm(id);
+    var key = normId(id);
+    if (!key) return null;
     if (Array.isArray(data)) {
       for (var i = 0; i < data.length; i++) {
-        if (norm(data[i].employeeId || data[i].id) === key) return data[i];
+        var rec = data[i];
+        // check common possible fields and normalise
+        var cand = normId(rec.employeeId || rec.employeeID || rec.id || '');
+        if (cand === key) return rec;
+      }
+      // last resort: search any property for matching id-ish value
+      for (i = 0; i < data.length; i++) {
+        var r = data[i];
+        for (var prop in r) {
+          if (r.hasOwnProperty(prop)) {
+            if (normId(String(r[prop])) === key) return r;
+          }
+        }
       }
       return null;
     }
-    for (var k in data) { if (norm(k) === key) return data[k]; }   // old format: { "emp001": {...} }
+    for (var k in data) { if (normId(k) === key) return data[k]; }
     return null;
   }
 
@@ -151,23 +169,38 @@
     document.title = name + ' · Reiss & Co';
   }
 
+  // Get id from query string (case-insensitive for key) or fallback to plain hash/text
   var params = new URLSearchParams(location.search);
   var id = params.get('id') || params.get('ID') || params.get('Id');
+
   if (!id) {
-    // forgiving fallback: ?ADM98174, ?=ADM98174, #ADM98174, #id=ADM98174
-    var raw = decodeURIComponent((location.search || location.hash).replace(/^[?#]/, '')).replace(/^=/, '').replace(/^id=/i, '');
+    // forgiving fallback:
+    var raw = decodeURIComponent((location.search || location.hash || '').replace(/^[?#]/, '')).replace(/^=/, '').replace(/^id=/i, '').trim();
+    // if the scanner produced a plain id (e.g. "ADM98174") or "#ADM98174"
     if (/^[A-Za-z0-9\-]+$/.test(raw)) id = raw;
   }
+
   if (!id) { message(note('No staff ID in this link. Scan the QR code on a staff card.')); return; }
 
-  fetch('staff.json', { cache: 'no-cache' })
+  // Diagnostic: see what id we are trying to find (open devtools to view)
+  console.log('Staff card id ->', JSON.stringify(id));
+
+  // Use absolute URL for staff.json relative to the current page to avoid relative path surprises
+  var staffUrl = new URL('staff.json', location.href).href;
+  console.log('Fetching staff data from', staffUrl);
+
+  fetch(staffUrl, { cache: 'no-cache' })
     .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(function (data) {
+      console.log('Loaded staff data:', Array.isArray(data) ? ('array length:' + data.length) : typeof data, data && data.slice && data.slice(0,2));
       var p = findRecord(data, id);
       if (p) render(p);
       else message(note('No record found for id ', id.trim(), '. Check the link and try again.'));
     })
-    .catch(function () { message(note('Could not load staff data. Please try again later.')); });
+    .catch(function (err) {
+      console.error('Failed to load staff.json:', err);
+      message(note('Could not load staff data. Please try again later.'));
+    });
 })();
 </script>
 </body>
