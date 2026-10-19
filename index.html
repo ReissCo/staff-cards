@@ -151,7 +151,13 @@
     document.title = name + ' · Reiss & Co';
   }
 
-  var id = new URLSearchParams(location.search).get('id');
+  var params = new URLSearchParams(location.search);
+  var id = params.get('id') || params.get('ID') || params.get('Id');
+  if (!id) {
+    // forgiving fallback: ?ADM98174, ?=ADM98174, #ADM98174, #id=ADM98174
+    var raw = decodeURIComponent((location.search || location.hash).replace(/^[?#]/, '')).replace(/^=/, '').replace(/^id=/i, '');
+    if (/^[A-Za-z0-9\-]+$/.test(raw)) id = raw;
+  }
   if (!id) { message(note('No staff ID in this link. Scan the QR code on a staff card.')); return; }
 
   fetch('staff.json', { cache: 'no-cache' })
