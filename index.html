@@ -192,7 +192,7 @@
   fetch(staffUrl, { cache: 'no-cache' })
     .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(function (data) {
-      console.log('Loaded staff data:', Array.isArray(data) ? ('array length:' + data.length) : typeof data, data && data.slice && data.slice(0,2));
+      try { console.log('Loaded staff data:', Array.isArray(data) ? ('array length:' + data.length) : typeof data, (Array.isArray(data) ? data.slice(0,2) : data)); } catch (e) { console.log('Loaded staff data (unable to stringify preview)'); }
       var p = findRecord(data, id);
       if (p) render(p);
       else message(note('No record found for id ', id.trim(), '. Check the link and try again.'));
